@@ -127,6 +127,7 @@ header, header > div {
     font-family: 'instrument-serif', serif;
     font-size: 96px;
     font-weight:100;
+    font-style:italic;
 }
 
 .Contact-button {
