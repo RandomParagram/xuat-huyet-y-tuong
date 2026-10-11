@@ -1,10 +1,4 @@
-window.onload = function() {
-    main();
-    closeForm();
-}
 
-function main(argc=0,argv=[]){
-}//this exist for fun, or is it?
 
 function getUserData(){
     const info={
