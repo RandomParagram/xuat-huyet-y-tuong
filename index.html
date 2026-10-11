@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/styles/stylesheet.css">
     <link rel="stylesheet" href="src/styles/formstyle.css">
     <script src="src/scripts/form.js"></script>
+    <script src="src/scripts/branding_switch.js"></script>
     <style>
         html, body {
             margin: 0;
@@ -22,7 +23,7 @@
     <header class="header">
         <div class="header-left">
             <a>
-                <img src="./assets/images/brands/minimal-restrictions-level/combination_mark_white.svg" alt="Minimal Restrictions Level" class="mrl_combination">
+                <div class="header-logo" title="Company Logo"></div>
             </a>
             <a href="https://randomparable.carrd.co" class="header-nav-button">Shop hardware
                 <img src="./assets/images/icons/top_right_arrow.svg" alt="" class="button-arrow" />
@@ -34,7 +35,7 @@
             <a href="https://randomparable.carrd.co/about" class="header-nav-button">About us</a>
             <a href="https://randomparable.carrd.co/contact" class="header-nav-button">Library</a>
             <a href="https://randomparable.carrd.co/contact" class="header-nav-button">Subscription</a>
-            <button href="form" class="header-button-wstroke" onclick="openForm()">Contact</button>
+            <button href="form" class="header-button-wstroke" onclick="formOpening()">Contact</button>
         </div>
     </header>
     <section class="hero">
@@ -45,7 +46,7 @@
         </div>
 
         <div >
-            <button href="form" class="header-button-wstroke" onclick="openForm()">Contact us
+            <button href="form" class="header-button-wstroke" onclick="formOpening()">Contact us
                 <img class="long-arrow" src="assets/images/icons/long_arrow.svg" alt="">
             </button>
             
@@ -100,5 +101,17 @@
 		<button type="submit" class="btn" onclick="getUserData()">Submit</button>
 		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 	</form>
+</div>
+<div id="brandPanel" class="branding-panel minimized">
+    <button id="togglePanelBtn" class="panel-toggle-btn">
+        <span>⚙️ Branding</span>
+        <span id="toggleIcon">▲</span>
+    </button>
+
+    <div class="panel-content">
+        <button class="brand-btn" data-preset="brand-a">🔴 Brand A</button>
+        <button class="brand-btn" data-preset="brand-b">🟢 Brand B</button>
+        <button class="brand-btn" data-preset="brand-c">🔵 Brand C</button>
+    </div>
 </div>
 </html>

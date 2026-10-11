@@ -61,6 +61,30 @@ header, header > div {
     display: block;
 }
 
+[data-brand="brand-a"] {
+    --logo-image: url('../../assets/images/brands/minimal-restrictions-level/combination_mark_white.svg');
+}
+
+/* Brand B */
+[data-brand="brand-b"] {
+    --logo-image: url('../../assets/images/brands/institute-of-indepedent-researchers/combination_mark_white.svg');
+}
+
+/* Brand C */
+[data-brand="brand-c"] {
+    --logo-image: url('https://via.placeholder.com/150x50/1e90ff/ffffff?text=Brand+C+Logo');
+}
+
+.header-logo {
+    width: 150px;
+    height: 50px;
+    background-image: var(--logo-image); /* Changes based on brand */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: background-image 0.4s ease;
+}
+
 .button-arrow {
     height: 12px;
     width: auto;
@@ -283,4 +307,59 @@ header, header > div {
     height:88%;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+.branding-panel {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 200px;
+    font-family: sans-serif;
+    transition: height 0.3s ease;
+}
+
+.branding-panel.minimized .panel-content {
+    display: none;
+}
+
+.panel-toggle-btn {
+    width: 100%;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-toggle-btn:hover {
+    background: #444;
+}
+
+.panel-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.brand-btn {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.brand-btn:hover {
+    background: #f0f0f0;
 }
