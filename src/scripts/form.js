@@ -6,6 +6,9 @@ function getUserData(){
         "name":document.getElementById("name").value,
         "email":document.getElementById("email").value
     };
+	if (info.name === "" || info.email===""){
+		return console.log("Not enough information")
+	}
     console.log(JSON.stringify(info))
 }
 
