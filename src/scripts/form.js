@@ -1,10 +1,6 @@
 window.onload = function() {
     main();
     closeForm();
-	const form = document.querySelector('form');
-	form.addEventListener('submit', (e => {
-	    e.preventDefault();
-		}))
 }
 
 function main(argc=0,argv=[]){
