@@ -76,14 +76,20 @@ header, header > div {
 }
 
 .header-logo {
-    display: flex;
-    width: auto;
-    height: 50px;
-    background-image: var(--logo-image); /* Changes based on brand */
+    width: 200px;
+    height: 70px;
+    background-image: url(../../assets/images/brands/minimal-restrictions-level/combination_mark_white.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left center;
     transition: background-image 0.4s ease;
+}
+
+
+[data-brand="brand-a"] .header-logo,
+[data-brand="brand-b"] .header-logo,
+[data-brand="brand-c"] .header-logo {
+    background-image: var(--logo-image);
 }
 
 .button-arrow {
@@ -151,6 +157,8 @@ header, header > div {
 .hero-title {
     font-family: 'instrument-serif', serif;
     font-size: 96px;
+    font-weight:100;
+    font-style:italic;
 }
 
 .Contact-button {
