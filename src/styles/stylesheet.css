@@ -22,7 +22,6 @@
     font-weight: 800;
     font-style: normal;
 }
-/* function: site-wide header styling */
 header, header > div {
     /* styling: header */
     background-color: black;
@@ -38,6 +37,7 @@ header, header > div {
     /* test: borderline */
     /* border: 2px solid red; */
 }
+/* function: site-wide header styling */
 
 .header-left {
     display: flex;
@@ -76,8 +76,10 @@ header, header > div {
 }
 
 .header-logo {
-    width: 150px;
+    display: flex;
+    width: auto;
     height: 50px;
+    max-width: 100%;
     background-image: var(--logo-image); /* Changes based on brand */
     background-size: contain;
     background-repeat: no-repeat;
@@ -192,7 +194,7 @@ header, header > div {
     align-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 .product-title{
@@ -362,4 +364,21 @@ header, header > div {
 
 .brand-btn:hover {
     background: #f0f0f0;
+}
+
+.footer-text {
+    display: flex;
+    font-family: 'instrument-sans',sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer {
+    background: #000000;
+    align-content: center;
+    align-items: center;
 }
