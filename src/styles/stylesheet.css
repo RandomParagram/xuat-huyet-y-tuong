@@ -126,6 +126,7 @@ header, header > div {
 .hero-title {
     font-family: 'instrument-serif', serif;
     font-size: 96px;
+    font-weight:100;
 }
 
 .Contact-button {
