@@ -14,13 +14,13 @@
     font-family: 'instrument-sans';
     src: url("../../assets/fonts/instrument-sans/InstrumentSans-SemiBold.woff2") format("woff2");
     font-weight: 600;
-    font-style: medium;
+    font-style: normal;
 }
 @font-face {
     font-family: 'instrument-sans';
     src: url("../../assets/fonts/instrument-sans/InstrumentSans-Bold.woff2") format("woff2");
     font-weight: 800;
-    font-style: bold;
+    font-style: normal;
 }
 /* function: site-wide header styling */
 header, header > div {
@@ -131,16 +131,15 @@ header, header > div {
 .Contact-button {
     line-height: 15;
     background-color: black;
-    font-family: 'instrument-sans';
-    font-style: bold;
-    font-weight:600;
+    font-family: 'instrument-sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
     color: white;
     width: fit-content;
     text-decoration: none;
     font-size: 20px;
     padding: 20px 20px;
     margin: 50px auto;
-    font-weight: bold;
     gap:60px;
 }
 
