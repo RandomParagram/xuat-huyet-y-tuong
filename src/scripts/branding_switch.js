@@ -1,6 +1,8 @@
+window.onload = function() {	
 const brandPanel = document.getElementById('brandPanel');
 const toggleBtn = document.getElementById('togglePanelBtn');
 const toggleIcon = document.getElementById('toggleIcon');
+
 
 toggleBtn.addEventListener('click', () => {
     // Toggles the 'minimized' class on the panel
@@ -21,3 +23,9 @@ brandButtons.forEach(button => {
         document.documentElement.setAttribute('data-brand', selectedBrand);
     });
 });
+
+const form = document.querySelector('form');
+form.addEventListener('submit', (e => {
+    e.preventDefault();
+	}));
+}

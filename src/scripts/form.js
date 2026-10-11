@@ -1,27 +1,37 @@
 window.onload = function() {
-  main();
+    main();
+    closeForm();
+	const form = document.querySelector('form');
+	form.addEventListener('submit', (e => {
+	    e.preventDefault();
+		}))
 }
 
 function main(argc=0,argv=[]){
 }//this exist for fun, or is it?
 
 function getUserData(){
-	const info={
-		"id":Math.floor( Math.random()*999999999),
-		"name":document.getElementById("name").value,
-		"email":document.getElementById("email").value
-	};
-	console.log(JSON.stringify(info))
+    const info={
+        "id":Math.floor( Math.random()*999999999),
+        "name":document.getElementById("name").value,
+        "email":document.getElementById("email").value
+    };
+    console.log(JSON.stringify(info))
+}
+
+function formOpening(){
+    if ( document.getElementById("form").style.display === "none"){
+        openForm();
+    }else{
+        closeForm();
+    }
 }
 
 function closeForm() {
-  document.getElementById("form").style.display = "none";
+    document.getElementById("form").style.display = "none";
 }
 function openForm() {
-  document.getElementById("form").style.display = "block";
+    document.getElementById("form").style.display = "block";
 }
 
-const form = document.querySelector('form');
-form.addEventListener('submit', (e => {
-e.preventDefault();
-}))
+
