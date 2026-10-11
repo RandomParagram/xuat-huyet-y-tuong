@@ -325,10 +325,13 @@ header, header > div {
     background: white;
     border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
     overflow: hidden;
     width: 200px;
     font-family: sans-serif;
     transition: height 0.3s ease;
+    left:auto;
+    z-index: 1000;
 }
 
 .branding-panel.minimized .panel-content {
