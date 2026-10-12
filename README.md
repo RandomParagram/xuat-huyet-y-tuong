@@ -11,7 +11,7 @@ Written with bare hands and bare languages (HTML, CSS, JavaScript).
 | Font | Instrument Serif | Instrument | [OFL (Open Font License) 1.1](https://openfontlicense.org/) | Distribution and implementation |
 | Image > branding | Minimal Restrictions Level | RandomParable and Co. | [Creative Commons BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en) | Implementation |
 | Image > branding | Institute of Independent Researchers | RandomParable and Co. | [Creative Commons BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en) | Implementation |
-| ---- | ---- | --------- | ------- | ----- |
+
 Any code included in this repository is under GNU AGPL Version 3.
 ## Plans
 The old code will migrate to a new branch named "old-src" as memoriam.
